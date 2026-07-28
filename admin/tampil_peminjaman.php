@@ -50,12 +50,17 @@
                                 <tr>
                                     <td><?= $no++; ?></td>
                                     <td><?= $data['nama_anggota']; ?></td>
+<<<<<<< HEAD
                                     <td><?= $data['judul_buku']?></td>
+=======
+                                    <td><?= $data['judul_buku']; ?></td>
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
                                     <td><?= $data['tgl_peminjaman']; ?></td>
 
                                     
 
                                     <td>
+<<<<<<< HEAD
                                         <a href="index.php?page=edit_peminjaman&id= <?= $data['id_peminjaman']; ?>" class="btn btn-warning btn-sm">Edit</a>
 
                                         <a href="../admin/delete_peminjaman.php?id=<?= $data['id_peminjaman']; ?>&from=pinjam" class="btn btn-danger btn-sm"
@@ -63,6 +68,16 @@
 
                                         <a href="index.php?page=kembali_peminjaman&id=<?php echo $data['id_peminjaman'];?>" class="btn btn-primary btn-sm">Kembali</a>
                                     </td>
+=======
+                                        <a href="index.php?page=edit_peminjaman&id=<?php echo $data['id_peminjaman'];?>" class="btn btn-warning btn-sm">Edit</a>
+
+                                        <a href="../admin/delete_peminjaman.php?id=<?= $data['id_peminjaman']; ?>" class="btn btn-danger btn-sm"
+                                            onclick="return confirm('Yakin mau hapus data ini?')">Hapus</a>
+
+                                        <a href="index.php?page=kembali&id=<?php echo $data['id_peminjaman'];?>" class="btn btn-primary btn-sm">Kembali</a>
+                                    </td>
+
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
                                 </tr>
 
                             <?php } ?>

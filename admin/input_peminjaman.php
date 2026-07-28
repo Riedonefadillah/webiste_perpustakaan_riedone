@@ -4,7 +4,11 @@
     $result_anggota = mysqli_query($koneksi, $query_anggota);
     $query_buku = "SELECT * FROM buku";
     $result_buku = mysqli_query($koneksi, $query_buku);
+<<<<<<< HEAD
     $query_peminjaman = mysqli_query($koneksi, "SELECT peminjaman.id_peminjaman, anggota.nama_anggota, buku.judul_buku,peminjaman.tgl_peminjaman FROM peminjaman INNER JOIN anggota ON peminjaman.id_anggota = anggota.id_anggota INNER JOIN buku ON peminjaman.id_buku = buku.id_buku"); 
+=======
+    $query_peminjaman = mysqli_query($koneksi, "SELECT peminjaman.id_peminjaman, anggota.nama_anggota, buku.judul_buku,peminjaman.tgl_peminjam FROM peminjaman INNER JOIN anggota ON peminjaman.id_anggota = anggota.id_anggota INNER JOIN buku ON peminjaman.id_buku = buku.id_buku"); 
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
 
     if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $id_anggota = $_POST['id_anggota'];

@@ -26,7 +26,11 @@ $no = 1;
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
+<<<<<<< HEAD
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-success">
+=======
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3" href="index.html">Perpustakaan</a>
             <!-- Sidebar Toggle-->
@@ -116,7 +120,12 @@ $no = 1;
                                     </a>
                                     <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                         <nav class="sb-sidenav-menu-nested nav">
+<<<<<<< HEAD
                                              <a class="nav-link" href="index.php?page=tampil_laporan">Tampil Laporan</a>
+=======
+                                            <a class="nav-link" href="index.php?page=tambah_anggota"><span class="sb-nav-link-icon"><i class="fa-solid fa-plus"></i></span>Tambah anggota</a>
+                                           <a class="nav-link" href="index.php?page=tampil_anggota"> <span class="sb-nav-link-icon"><i class="fas fa-users"></i></span>Data anggota</a>
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
                                         </nav>
                                     </div>
                                 </nav>
@@ -131,7 +140,11 @@ $no = 1;
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
+<<<<<<< HEAD
                         <?php echo $_SESSION['email']; ?>
+=======
+                        Start Bootstrap
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
                     </div>
                 </nav>
             </div>
@@ -161,6 +174,7 @@ $no = 1;
                         case 'input_peminjaman':
                             include 'input_peminjaman.php';
                             break;
+<<<<<<< HEAD
                         case 'tampil_laporan':
                             include 'tampil_laporan.php';
                             break;
@@ -179,6 +193,14 @@ $no = 1;
                         case 'kembali_peminjaman':
                             include 'kembali_peminjaman.php';
                             break;
+=======
+                        case 'tampil_peminjaman':
+                            include 'tampil_peminjaman.php';
+                            break;
+                        case 'tampil_kembali':
+                            include 'tampil_kembali.php';
+                            break;
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
                         default:
                             echo"<h1> Data Tidak Tersedia</h1>";
                             break;

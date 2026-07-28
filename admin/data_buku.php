@@ -65,7 +65,10 @@ include '../koneksi.php';
                                         <a href="../admin/delete_buku.php?id=<?= $data['id_buku']; ?>" class="btn btn-danger btn-sm"
                                             onclick="return confirm('Yakin mau hapus data ini?')">Hapus</a>
                                     </td>
+<<<<<<< HEAD
                                     
+=======
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
 
                                 </tr>
 

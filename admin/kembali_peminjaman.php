@@ -10,6 +10,7 @@
 <body>
     <?php
     include '../koneksi.php';
+<<<<<<< HEAD
     $id = $_GET['id'];
 
 
@@ -32,6 +33,13 @@
     while($data = mysqli_fetch_array($query_data)){
 
     
+=======
+    $id_peminjaman = $_GET['id'];
+
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $tanggal_kembali = $_POST['tgl_kembali'];
+    }
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
     ?>
     <main>
         <div class="container-fluid px-4">
@@ -47,25 +55,44 @@
 
                 <div class="card-body">
 
+<<<<<<< HEAD
                     <form method="POST" action="kembali_peminjaman.php?page=kembali&id=<?php echo $id;?>">
 
                         <div class="form-floating mb-3">
                             <input type="text" name="nama_peminjam" class="form-control" placeholder="Masukkan Nama Peminjam" value="<?php echo $data['nama_anggota'];?>" readonly>
+=======
+                    <form method="POST" action="kembali_peminjaman.php?id=<?php echo $id_peminjaman;?>">
+
+                        <div class="form-floating mb-3">
+                            <input type="text" name="nama_peminjam" class="form-control" placeholder="Masukkan Nama Peminjam" value="<?php echo $d['nama_anggota'];?>">
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
                             <label for="inputName">Nama Peminjam</label>
                         </div>
 
                         <div class="form-floating mb-3">
+<<<<<<< HEAD
                             <input type="text" name="judul_buku" id="inputBuku"     class="form-control" required value="<?php echo $data['judul_buku'] ?>" readonly></input>
+=======
+                            <input type="text" name="judul_buku" id="inputBuku"     class="form-control" required></input>
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
                             <label for="inputBuku">Judul Buku</label>
                         </div>
 
                         <div class="form-floating mb-3">
+<<<<<<< HEAD
                             <input type="date" name="tgl_peminjaman" id="inputTanggal" class="form-control" placeholder="Masukkan Tanggal Peminjam" value="<?php echo $data['tgl_peminjaman']; ?>" readonly></input>
+=======
+                            <input type="date" name="tgl_peminjaman" id="inputTanggal" class="form-control" placeholder="Masukkan Tanggal Peminjam"></input>
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
                             <label for="inputBuku">Tanggal Peminjaman</label>
                         </div>
 
                         <div class="form-floating mb-3">
+<<<<<<< HEAD
                             <input type="date" name="tgl_kembali" id="inputTanggalKembali"     class="form-control" required>
+=======
+                            <input type="text" name="tgl_kembali" id="inputTanggalKembali"     class="form-control" required></input>
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
                             <label for="inputBuku">Tanggal Kembali</label>
                         </div>
 
@@ -94,12 +121,17 @@
 
                 </div>
             </div>
+<<<<<<< HEAD
             
         </div>
     </main>
     <?php
         }
     ?>
+=======
+        </div>
+    </main>
+>>>>>>> 04c95f79c29a81c0e83b705a3d30d41ee6923e1f
 </body>
 
 </html>
